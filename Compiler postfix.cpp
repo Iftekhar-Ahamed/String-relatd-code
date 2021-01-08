@@ -42,7 +42,7 @@ string toPostfix(string s){
             else {
                 cout<<s[i]<<" "<<operetor.top()<<endl;
                 while(checklevel(s[i])<=checklevel(operetor.top())&&operetor.top()!='x'){
-                     cout<<operetor.top()<<i<<endl;
+                    //cout<<operetor.top()<<i<<endl;
                     output+=operetor.top();
                     operetor.pop();
                 }
